@@ -980,10 +980,17 @@
     margin: 0;
   }
   @media (max-width: 900px) {
-    .match { margin: 20px; padding: 60px 24px; }
-    .match__equation { grid-template-columns: 1fr; gap: 16px; margin-bottom: 50px; }
-    .match__op { transform: rotate(90deg); }
-    .match__body { grid-template-columns: 1fr; gap: 24px; padding-top: 32px; }
+    .match { margin: 16px; padding: 48px 20px; }
+    .match__equation {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-bottom: 44px;
+    }
+    .match__term { padding: 20px 8px; }
+    .match__amount { font-size: clamp(36px, 11vw, 56px); line-height: 0.92; margin-bottom: 4px; }
+    .match__caption { font-size: 9px; letter-spacing: 0.1em; }
+    .match__op { display: none; }
+    .match__body { grid-template-columns: 1fr; gap: 20px; padding-top: 32px; }
   }
 
   /* ============ CTA ============ */
